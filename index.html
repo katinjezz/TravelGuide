@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luxury Los Angeles & Las Vegas Travel Guide</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+NAVIGATION
+============================ -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+TravelGuide
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="pages/overview.html">Overview</a></li>
+
+<li><a href="pages/flights.html">Flights</a></li>
+
+<li><a href="pages/hotels.html">Hotels</a></li>
+
+<li><a href="los-angeles/index.html">Los Angeles</a></li>
+
+<li><a href="las-vegas/index.html">Las Vegas</a></li>
+
+<li><a href="pages/restaurants.html">Dining</a></li>
+
+<li><a href="pages/budget.html">Budget</a></li>
+
+<li><a href="pages/shopping.html">Shopping</a></li>
+
+<li><a href="pages/packing.html">Packing</a></li>
+
+<li><a href="pages/emergency.html">Emergency</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ===========================
+HERO
+============================ -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<p class="hero-tag">
+
+LUXURY FAMILY HOLIDAY
+
+</p>
+
+<h1>
+
+Los Angeles
+
+<span>&</span>
+
+Las Vegas
+
+</h1>
+
+<h2>
+
+19 December – 4 January
+
+</h2>
+
+<p class="hero-text">
+
+A professionally planned luxury family holiday featuring
+Hollywood,
+Universal Studios,
+Disneyland,
+Santa Monica,
+Malibu,
+the Las Vegas Strip,
+the Grand Canyon,
+premium dining,
+shopping,
+and unforgettable experiences.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="pages/overview.html" class="btn-primary">
+
+Start Planning
+
+</a>
+
+<a href="los-angeles/index.html" class="btn-secondary">
+
+View Itinerary
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+<main>
+
+<section class="dashboard">
+
+<h2 class="section-title">
+
+Your Holiday Dashboard
+
+</h2>
+
+<div class="dashboard-grid">
+
+<a href="pages/overview.html" class="dashboard-card">
+
+🌎
+
+<h3>Trip Overview</h3>
+
+<p>
+
+View your complete 17-day itinerary, destinations, hotels and transport.
+
+</p>
+
+</a>
+
+<a href="pages/flights.html" class="dashboard-card">
+
+✈
+
+<h3>Flights</h3>
+
+<p>
+
+Flight information, airport guide, baggage, checklists and transit.
+
+</p>
+
+</a>
+
+<a href="pages/hotels.html" class="dashboard-card">
+
+🏨
+
+<h3>Hotels</h3>
+
+<p>
+
+Accommodation details, amenities, maps and nearby attractions.
+
+</p>
+
+</a>
+
+<a href="los-angeles/index.html" class="dashboard-card">
+
+🌴
+
+<h3>Los Angeles</h3>
+
+<p>
+
+8-day interactive itinerary with restaurants and attractions.
+
+</p>
+
+</a>
+
+<a href="las-vegas/index.html" class="dashboard-card">
+
+🎰
+
+<h3>Las Vegas</h3>
+
+<p>
+
+9-day itinerary including shows, shopping and adventures.
+
+</p>
+
+</a>
+
+<a href="pages/restaurants.html" class="dashboard-card">
+
+🍽
+
+<h3>Dining Guide</h3>
+
+<p>
+
+Restaurants, cafés, desserts and family dining recommendations.
+
+</p>
+
+</a>
+
+<a href="pages/budget.html" class="dashboard-card">
+
+💰
+
+<h3>Budget Planner</h3>
+
+<p>
+
+Monitor expected spending across flights, hotels and activities.
+
+</p>
+
+</a>
+
+<a href="pages/shopping.html" class="dashboard-card">
+
+🛍
+
+<h3>Shopping Guide</h3>
+
+<p>
+
+Luxury malls, outlets and souvenir shopping.
+
+</p>
+
+</a>
+
+<a href="pages/packing.html" class="dashboard-card">
+
+🧳
+
+<h3>Packing List</h3>
+
+<p>
+
+Everything you need before leaving Kenya.
+
+</p>
+
+</a>
+
+<a href="pages/emergency.html" class="dashboard-card">
+
+🚑
+
+<h3>Emergency Guide</h3>
+
+<p>
+
+Emergency numbers, embassy information and safety tips.
+
+</p>
+
+</a>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<h2 class="section-title">
+
+Trip Progress
+
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3>
+
+📅
+
+</h3>
+
+<p id="tripCountdown">
+
+Loading...
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+🌤
+
+</h3>
+
+<p id="weather">
+
+Loading Weather...
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+✈
+
+</h3>
+
+<p id="flightStatus">
+
+Loading Flight Status...
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+💵
+
+</h3>
+
+<p>
+
+USD • KES
+
+Converter Available
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+❤️
+
+</h3>
+
+<p>
+
+Saved Attractions
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>
+
+📍
+
+</h3>
+
+<p>
+
+Current Location Services
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why-trip">
+
+<h2 class="section-title">
+
+Quick Actions
+
+</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<h3>
+
+🗺 Open Google Maps
+
+</h3>
+
+<p>
+
+Launch navigation directly from any itinerary page.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>
+
+🍽 Find Nearby Restaurants
+
+</h3>
+
+<p>
+
+Sort restaurants by rating, cuisine and distance.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>
+
+🛒 Favourite Attractions
+
+</h3>
+
+<p>
+
+Save places you definitely want to visit.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>
+
+📄 Print Itinerary
+
+</h3>
+
+<p>
+
+Generate a printable version of your travel guide.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>
+
+🌙 Dark Mode
+
+</h3>
+
+<p>
+
+Switch between light and dark themes.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>
+
+📷 Gallery
+
+</h3>
+
+<p>
+
+Browse destination photographs throughout the guide.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+<!-- ===========================
+QUICK STATS
+============================ -->
+
+<section class="stats">
+
+<h2 class="section-title">
+
+Trip Overview
+
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3>📍 Destination</h3>
+
+<p>
+
+Los Angeles & Las Vegas
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>📅 Duration</h3>
+
+<p>
+
+17 Days
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>👨‍👩‍👧‍👦 Travellers</h3>
+
+<p>
+
+4 Adults
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>🚖 Transport</h3>
+
+<p>
+
+Uber Throughout
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>💰 Budget</h3>
+
+<p>
+
+Approx. KSh 3.3 Million
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+FEATURED EXPERIENCES
+============================ -->
+
+<section class="experiences">
+
+<h2 class="section-title">
+
+Featured Experiences
+
+</h2>
+
+<p class="section-subtitle">
+
+Some of the unforgettable places you'll experience during your journey.
+
+</p>
+
+<div class="experience-grid">
+
+<div class="experience-card">
+
+<div class="experience-icon">🎬</div>
+
+<h3>Hollywood</h3>
+
+<p>
+
+Walk of Fame, TCL Chinese Theatre,
+Dolby Theatre,
+Hollywood Sign,
+and Griffith Observatory.
+
+</p>
+
+<a href="los-angeles/day2.html">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-icon">🎢</div>
+
+<h3>Universal Studios</h3>
+
+<p>
+
+Experience thrilling rides,
+The Wizarding World of Harry Potter,
+Studio Tour and CityWalk.
+
+</p>
+
+<a href="los-angeles/day3.html">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-icon">🏖</div>
+
+<h3>Santa Monica</h3>
+
+<p>
+
+Relax at Santa Monica Pier,
+ride the Ferris Wheel,
+visit Venice Beach and enjoy the Pacific Ocean.
+
+</p>
+
+<a href="los-angeles/day4.html">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-icon">🎡</div>
+
+<h3>Disneyland</h3>
+
+<p>
+
+Spend an unforgettable day enjoying rides,
+parades,
+fireworks,
+and Disney magic.
+
+</p>
+
+<a href="los-angeles/day6.html">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-icon">🏜</div>
+
+<h3>Grand Canyon</h3>
+
+<p>
+
+Choose between a helicopter tour,
+South Rim adventure
+or scenic viewpoints.
+
+</p>
+
+<a href="las-vegas/day14.html">
+
+Explore →
+
+</a>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-icon">🎰</div>
+
+<h3>Las Vegas Strip</h3>
+
+<p>
+
+Bellagio Fountains,
+The Sphere,
+The Venetian,
+High Roller,
+shopping and nightlife.
+
+</p>
+
+<a href="las-vegas/day10.html">
+
+Explore →
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+WHY THIS ITINERARY
+============================ -->
+
+<section class="why-trip">
+
+    <h2 class="section-title">
+        Why This Itinerary?
+    </h2>
+
+    <p class="section-subtitle">
+        Carefully planned to maximise your experience while minimising unnecessary travel.
+    </p>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <h3>🗺 Smart Route</h3>
+            <p>
+                Attractions are grouped by location to reduce travel time and make every day efficient.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>🏨 Premium Hotels</h3>
+            <p>
+                Luxury hotels were selected because they are close to major attractions and provide excellent amenities.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>🍽 Flexible Dining</h3>
+            <p>
+                Every day includes premium, mid-range and budget restaurant options so you can choose based on your mood.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>🚖 Uber Friendly</h3>
+            <p>
+                The itinerary is designed around Uber to avoid the cost and stress of hiring a vehicle.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>📷 Best Photo Spots</h3>
+            <p>
+                Each day includes recommended viewpoints and the best times for memorable family photos.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>🌅 Balanced Holiday</h3>
+            <p>
+                Busy sightseeing days are balanced with relaxed shopping, beach and leisure days.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+TRIP AT A GLANCE
+============================ -->
+
+<section class="trip-overview">
+
+    <h2 class="section-title">
+        Trip at a Glance
+    </h2>
+
+    <p class="section-subtitle">
+        Everything you need to know before your journey begins.
+    </p>
+
+    <div class="overview-grid">
+
+        <div class="overview-card">
+            <h3>📅 Travel Dates</h3>
+            <p>19 December – 4 January</p>
+        </div>
+
+        <div class="overview-card">
+            <h3>✈ Airline</h3>
+            <p>Qatar Airways</p>
+        </div>
+
+        <div class="overview-card">
+            <h3>🏨 Hotels</h3>
+            <p>Loews Hollywood Hotel<br>The Venetian Resort</p>
+        </div>
+
+        <div class="overview-card">
+            <h3>🚖 Transport</h3>
+            <p>Uber throughout the trip</p>
+        </div>
+
+        <div class="overview-card">
+            <h3>💰 Estimated Budget</h3>
+            <p>Approx. KSh 3.3 Million</p>
+        </div>
+
+        <div class="overview-card">
+            <h3>🌍 Journey</h3>
+            <p>
+                Nairobi → Doha → Los Angeles → Las Vegas → Doha → Nairobi
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+JOURNEY TIMELINE
+============================ -->
+
+<section class="journey">
+
+    <h2 class="section-title">
+        Your Journey
+    </h2>
+
+    <p class="section-subtitle">
+        Follow your adventure from Kenya to the United States and back home.
+    </p>
+
+    <div class="journey-line">
+
+        <div class="journey-stop">
+            <div class="circle">🇰🇪</div>
+            <h3>Nairobi</h3>
+            <p>Departure</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="journey-stop">
+            <div class="circle">🇶🇦</div>
+            <h3>Doha</h3>
+            <p>Transit</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="journey-stop">
+            <div class="circle">🇺🇸</div>
+            <h3>Los Angeles</h3>
+            <p>8 Days</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="journey-stop">
+            <div class="circle">🎰</div>
+            <h3>Las Vegas</h3>
+            <p>9 Days</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="journey-stop">
+            <div class="circle">🏡</div>
+            <h3>Home</h3>
+            <p>Return to Kenya</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+TRAVEL DASHBOARD
+============================ -->
+
+<section class="dashboard">
+
+<h2 class="section-title">
+
+Travel Dashboard
+
+</h2>
+
+<div class="dashboard-grid">
+
+<a href="pages/flights.html" class="dashboard-card">
+
+✈
+
+<h3>
+
+Flights
+
+</h3>
+
+<p>
+
+Airline information,
+airport guide,
+travel tips and baggage.
+
+</p>
+
+</a>
+
+<a href="pages/hotels.html" class="dashboard-card">
+
+🏨
+
+<h3>
+
+Hotels
+
+</h3>
+
+<p>
+
+Accommodation,
+check-in,
+maps,
+restaurants nearby.
+
+</p>
+
+</a>
+
+<a href="pages/restaurants.html" class="dashboard-card">
+
+🍽
+
+<h3>
+
+Dining
+
+</h3>
+
+<p>
+
+Breakfast,
+lunch,
+dinner,
+desserts and cafés.
+
+</p>
+
+</a>
+
+<a href="pages/shopping.html" class="dashboard-card">
+
+🛍
+
+<h3>
+
+Shopping
+
+</h3>
+
+<p>
+
+Luxury malls,
+outlets,
+souvenirs
+and local shopping.
+
+</p>
+
+</a>
+
+<a href="pages/budget.html" class="dashboard-card">
+
+💰
+
+<h3>
+
+Budget
+
+</h3>
+
+<p>
+
+Daily spending,
+holiday costs
+and estimated expenses.
+
+</p>
+
+</a>
+
+<a href="pages/packing.html" class="dashboard-card">
+
+🎒
+
+<h3>
+
+Packing
+
+</h3>
+
+<p>
+
+Travel checklist,
+weather guide,
+documents
+and essentials.
+
+</p>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ===========================
+COUNTDOWN
+============================ -->
+
+<section class="countdown">
+
+<h2 class="section-title">
+
+Holiday Countdown
+
+</h2>
+
+<div class="countdown-box">
+
+<div class="count-item">
+
+<h3 id="days">
+
+--
+
+</h3>
+
+<p>
+
+Days
+
+</p>
+
+</div>
+
+<div class="count-item">
+
+<h3 id="hours">
+
+--
+
+</h3>
+
+<p>
+
+Hours
+
+</p>
+
+</div>
+
+<div class="count-item">
+
+<h3 id="minutes">
+
+--
+
+</h3>
+
+<p>
+
+Minutes
+
+</p>
+
+</div>
+
+<div class="count-item">
+
+<h3 id="seconds">
+
+--
+
+</h3>
+
+<p>
+
+Seconds
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+FOOTER
+============================ -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h3>
+
+TravelGuide
+
+</h3>
+
+<p>
+
+Luxury Los Angeles & Las Vegas
+
+Family Holiday Planner
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<p>Flights</p>
+
+<p>Hotels</p>
+
+<p>Dining</p>
+
+<p>Budget</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Travel Information
+
+</h3>
+
+<p>Emergency Numbers</p>
+
+<p>Currency</p>
+
+<p>Weather</p>
+
+<p>Maps</p>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 Luxury Los Angeles & Las Vegas Travel Guide
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

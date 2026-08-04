@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dining | Travel Guide</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+
+TravelGuide
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="flights.html">Flights</a></li>
+<li><a href="hotels.html">Hotels</a></li>
+<li><a href="../los-angeles/index.html">Los Angeles</a></li>
+<li><a href="../las-vegas/index.html">Las Vegas</a></li>
+<li><a href="restaurants.html">Dining</a></li>
+<li><a href="budget.html">Budget</a></li>
+<li><a href="shopping.html">Shopping</a></li>
+<li><a href="packing.html">Packing</a></li>
+<li><a href="emergency.html">Emergency</a></li>
+
+</ul>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<p class="hero-tag">
+
+DINING GUIDE
+
+</p>
+
+<h1>
+
+Restaurants & Cafés
+
+</h1>
+
+<h2>
+
+Luxury • Casual • Local Favorites
+
+</h2>
+
+<p class="hero-text">
+
+Every day of your holiday includes recommended breakfast, lunch, dinner and dessert locations selected for quality, convenience and atmosphere.
+
+</p>
+
+</div>
+
+</header>
+
+<section class="stats">
+
+<h2 class="section-title">
+
+Dining Summary
+
+</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3>🍳 Breakfast</h3>
+
+<p>
+
+Daily recommendations
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>🍔 Lunch</h3>
+
+<p>
+
+Quick & Casual
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>🥩 Dinner</h3>
+
+<p>
+
+Premium Experiences
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>🍰 Dessert</h3>
+
+<p>
+
+Ice Cream & Bakeries
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>☕ Coffee</h3>
+
+<p>
+
+Specialty Cafés
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>💲 Budget</h3>
+
+<p>
+
+Options for Every Budget
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="experiences">
+
+<h2 class="section-title">
+
+Los Angeles Recommendations
+
+</h2>
+
+<div class="experience-grid">
+
+<div class="experience-card">
+
+<div class="experience-icon">🥞</div>
+
+<h3>
+
+Breakfast
+
+</h3>
+
+<p>
+
+The Original Pantry Café
+
+<br><br>
+
+Rating: ★★★★★
+
+<br>
+
+Classic American breakfast.
+
+</p>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-icon">🍔</div>
+
+<h3>
+
+Lunch
+
+</h3>
+
+<p>
+
+In-N-Out Burger
+
+<br><br>
+
+Rating: ★★★★★
+
+<br>
+
+California's iconic burger experience.
+
+</p>
+
+</div>
+
+<div class="experience-card">
+
+<div class="experience-icon">🥩</div>
+
+<h3>
+
+Dinner
+
+</h3>
+
+<p>
+
+Musso & Frank Grill
+
+<br><br>
+
+Rating: ★★★★★
+
+<br>
+
+Historic Hollywood steakhouse.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="experiences">
+
+<h2 class="section-title">
+
+Find Your Perfect Restaurant
+
+</h2>
+
+<div style="margin:30px 0;display:flex;gap:15px;flex-wrap:wrap;">
+
+<input
+id="search"
+type="text"
+placeholder="Search restaurant..."
+style="padding:15px;width:320px;border-radius:10px;border:1px solid #ccc;">
+
+<select id="restaurantFilter" style="padding:15px;border-radius:10px;">
+
+<option value="all">All Cuisine</option>
+
+<option value="american">American</option>
+
+<option value="italian">Italian</option>
+
+<option value="steak">Steakhouse</option>
+
+<option value="seafood">Seafood</option>
+
+<option value="dessert">Dessert</option>
+
+<option value="coffee">Coffee</option>
+
+</select>
+
+<select onchange="sortRestaurants(this.value)" style="padding:15px;border-radius:10px;">
+
+<option value="">Sort By</option>
+
+<option value="rating">Highest Rating</option>
+
+<option value="distance">Nearest</option>
+
+<option value="price">Lowest Price</option>
+
+</select>
+
+</div>
+
+<div class="restaurant-list experience-grid">
+
+<div class="experience-card restaurant-card search-card"
+
+data-type="american"
+
+data-rating="4.9"
+
+data-distance="0.2"
+
+data-price="2">
+
+<div class="experience-icon">🍔</div>
+
+<h3>
+
+In-N-Out Burger
+
+</h3>
+
+<p>
+
+⭐ 4.9
+
+<br>
+
+📍 200 m
+
+<br>
+
+💲$
+
+<br><br>
+
+California's legendary burger restaurant.
+
+</p>
+
+<button class="favourite">🤍</button>
+
+<button class="mapButton"
+
+data-location="https://maps.google.com/?q=In-N-Out+Burger">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="experience-card restaurant-card search-card"
+
+data-type="steak"
+
+data-rating="4.9"
+
+data-distance="1.5"
+
+data-price="4">
+
+<div class="experience-icon">🥩</div>
+
+<h3>
+
+Musso & Frank Grill
+
+</h3>
+
+<p>
+
+⭐ 4.9
+
+<br>
+
+📍 1.5 km
+
+<br>
+
+💲💲💲💲
+
+<br><br>
+
+Historic Hollywood steakhouse.
+
+</p>
+
+<button class="favourite">🤍</button>
+
+<button class="mapButton"
+
+data-location="https://maps.google.com/?q=Musso+and+Frank+Grill">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="experience-card restaurant-card search-card"
+
+data-type="coffee"
+
+data-rating="4.8"
+
+data-distance="0.3"
+
+data-price="2">
+
+<div class="experience-icon">☕</div>
+
+<h3>
+
+Blue Bottle Coffee
+
+</h3>
+
+<p>
+
+⭐ 4.8
+
+<br>
+
+📍 300 m
+
+<br>
+
+💲$
+
+<br><br>
+
+Specialty coffee.
+
+</p>
+
+<button class="favourite">🤍</button>
+
+<button class="mapButton"
+
+data-location="https://maps.google.com/?q=Blue+Bottle+Coffee">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="experience-card restaurant-card search-card"
+
+data-type="italian"
+
+data-rating="4.8"
+
+data-distance="0.8"
+
+data-price="3">
+
+<div class="experience-icon">🍝</div>
+
+<h3>
+
+Il Pastaio
+
+</h3>
+
+<p>
+
+⭐ 4.8
+
+<br>
+
+📍 800 m
+
+<br>
+
+💲💲💲
+
+<br><br>
+
+Fresh handmade Italian cuisine.
+
+</p>
+
+<button class="favourite">🤍</button>
+
+<button class="mapButton"
+
+data-location="https://maps.google.com/?q=Il+Pastaio+Beverly+Hills">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="experience-card restaurant-card search-card"
+
+data-type="dessert"
+
+data-rating="4.9"
+
+data-distance="0.5"
+
+data-price="2">
+
+<div class="experience-icon">🍨</div>
+
+<h3>
+
+Salt & Straw
+
+</h3>
+
+<p>
+
+⭐ 4.9
+
+<br>
+
+📍 500 m
+
+<br>
+
+💲$
+
+<br><br>
+
+Award-winning ice cream.
+
+</p>
+
+<button class="favourite">🤍</button>
+
+<button class="mapButton"
+
+data-location="https://maps.google.com/?q=Salt+and+Straw">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="experience-card restaurant-card search-card"
+
+data-type="seafood"
+
+data-rating="4.9"
+
+data-distance="0.7"
+
+data-price="4">
+
+<div class="experience-icon">🦞</div>
+
+<h3>
+
+The Lobster
+
+</h3>
+
+<p>
+
+⭐ 4.9
+
+<br>
+
+📍 700 m
+
+<br>
+
+💲💲💲💲
+
+<br><br>
+
+Luxury seafood overlooking Santa Monica Pier.
+
+</p>
+
+<button class="favourite">🤍</button>
+
+<button class="mapButton"
+
+data-location="https://maps.google.com/?q=The+Lobster+Santa+Monica">
+
+Open Map
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h3>
+
+TravelGuide
+
+</h3>
+
+<p>
+
+Luxury Los Angeles & Las Vegas Holiday Planner
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Next Page
+
+</h3>
+
+<p>
+
+Budget
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Continue Planning
+
+</h3>
+
+<p>
+
+Budget • Shopping • Packing
+
+</p>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 TravelGuide
+
+</p>
+
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+
+</html>
