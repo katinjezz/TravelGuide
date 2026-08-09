@@ -1,0 +1,17 @@
+.hero{
+
+    background:linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.45)),
+    url("../images/destinations/san-diego.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.card{
+
+    min-height:180px;
+
+}

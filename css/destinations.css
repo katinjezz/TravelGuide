@@ -1,0 +1,37 @@
+.destination-card{
+
+    position:relative;
+
+}
+
+.destination-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(to top,
+        rgba(0,0,0,.55),
+        transparent 60%);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.destination-card:hover::after{
+
+    opacity:1;
+
+}
+
+.destination-content{
+
+    position:relative;
+
+    z-index:2;
+
+}

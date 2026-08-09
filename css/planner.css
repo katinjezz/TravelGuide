@@ -1,0 +1,23 @@
+.planner-card{
+
+    border-top:6px solid #FFD166;
+
+}
+
+.planner-card:nth-child(2){
+
+    border-color:#00A8A8;
+
+}
+
+.planner-card:nth-child(3){
+
+    border-color:#0F4C81;
+
+}
+
+.planner-card:nth-child(4){
+
+    border-color:#FF6B6B;
+
+}

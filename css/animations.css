@@ -1,0 +1,153 @@
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes zoom{
+
+from{
+
+opacity:0;
+
+transform:scale(.9);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes slideLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+@keyframes slideRight{
+
+from{
+
+opacity:0;
+
+transform:translateX(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+.hero-content{
+
+animation:fadeUp 1s ease;
+
+}
+
+.destination-card{
+
+animation:zoom .8s ease;
+
+}
+
+.planner-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.travel-card{
+
+animation:zoom .8s ease;
+
+}
+
+.count-box{
+
+animation:slideLeft .9s ease;
+
+}
+
+.hero h1{
+
+animation:
+
+fadeUp
+
+1s ease;
+
+}
+
+.hero h2{
+
+animation:
+
+fadeUp
+
+1.3s ease;
+
+}
+
+.hero p{
+
+animation:
+
+fadeUp
+
+1.6s ease;
+
+}
+
+.hero-buttons{
+
+animation:
+
+fadeUp
+
+1.9s ease;
+
+}

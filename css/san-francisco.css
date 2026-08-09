@@ -1,0 +1,33 @@
+.hero h1{
+
+    letter-spacing:2px;
+
+}
+
+.card-title{
+
+    color:#0F4C81;
+
+}
+
+.card{
+
+    min-height:180px;
+
+}
+
+#quick-info i{
+
+    font-size:42px;
+
+    color:#0F4C81;
+
+    margin-bottom:20px;
+
+}
+
+#quick-info .planner-card{
+
+    text-align:center;
+
+}
